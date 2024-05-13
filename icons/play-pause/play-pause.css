@@ -9,17 +9,20 @@ play-pause {
     display: flex;
     justify-content: center;
     align-items: center;
-    --size: 80%;
     /* height: var(--size); */
-    width: max-content;
+    /* width: max-content; */
+    
+    transition: .3s;
 }
 
 play-pause svg {
     display: block;
-    height: 95%;
-    width: 95%;
+    height: 80%;
+    width: 80%;
     fill: var(--button-color);
     stroke: var(--button-color);
-    stroke-width: 4;
+    stroke-width: 5;
     stroke-linejoin: round;
+
+    transition: .3s;
 }
