@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Importing particle background -->
-    <link rel="stylesheet" href="particles\particle.css">
-    <script src="particles\particle.js" defer></script>
+    <script> 
+        $(function(){
+          $("background").load("particles/particle.html"); 
+        });
+    </script>
+    <link rel="stylesheet" href="particles/particle.css">
+    <script src="particles/particle.js" defer></script>
     <!-- End of importing -->
 
     <!-- Importing play-pause button -->
@@ -27,9 +32,6 @@
 </head>
 <body>
     <background>
-        <background-box>
-            <particle></particle>
-        </background-box>
     </background>
 
     <interface>

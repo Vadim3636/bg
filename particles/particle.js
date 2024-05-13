@@ -7,6 +7,9 @@ function randInt(min, max) {
 
 window.addEventListener("load", function() {
     setInterval(function() {
+        while (container == undefined) {
+            container = document.querySelector("background background-box");
+        }
         let particle = document.createElement("particle");
         let size = randInt(0, 50) + "vmin";
         particle.style.width = size;

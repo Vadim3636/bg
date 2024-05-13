@@ -1,0 +1,3 @@
+play-pause button:
+    link: https://codepen.io/vkjgr/pen/OJwvWBx
+    info: modified
