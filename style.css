@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    background-image: url(гусь.jpg);
+}
+
+background{
+    position: fixed;
+
+    left: -10vw;
+    top: -10vh;
+    width: 120vw;
+    height: 120vh;
+    /* background: #000; */
+    /* background-image: url(гусь.jpg); */
+    background: transparent;
+
+    filter: blur(50px);
+    z-index: -1;
+}
+
+background-box{
+    position: absolute;
+
+    padding: 10vh 10vw 10vh 10vw;
+}
+
+particle{
+    position: absolute;
+
+    background: #fff;
+    border-radius: 50%;
+
+    width: 15vmin;
+    height: 15vmin;
+
+    transform: scale(0%);
+
+    animation: selection 5s 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes selection {
+    0% {
+        transform: scale(0%);
+    }
+    20% {
+        transform: scale(100%);
+    }
+    40% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(0%);
+    }
+}
