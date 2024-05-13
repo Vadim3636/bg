@@ -18,4 +18,4 @@ className = 'clicked';
   
 })
 
-el.click();
+window.addEventListener("load", function() { setTimeout(function() { el.click(); }, 50); });

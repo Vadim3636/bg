@@ -6,6 +6,9 @@
 } */
 
 play-pause {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     --size: 80%;
     /* height: var(--size); */
     width: max-content;
@@ -13,10 +16,10 @@ play-pause {
 
 play-pause svg {
     display: block;
-    height: 100%;
-    width: 100%;
-    fill: black;
-    stroke: black;
+    height: 95%;
+    width: 95%;
+    fill: var(--button-color);
+    stroke: var(--button-color);
     stroke-width: 4;
     stroke-linejoin: round;
 }

@@ -5,7 +5,7 @@ function randInt(min, max) {
     return Math.random() * (max - min) + min;
 }
 
-window.onload = function() {
+window.addEventListener("load", function() {
     setInterval(function() {
         let particle = document.createElement("particle");
         let size = randInt(0, 50) + "vmin";
@@ -19,4 +19,4 @@ window.onload = function() {
             particle.remove();
         }, animationDuration * 1000);
     }, 300);
-}
+});
