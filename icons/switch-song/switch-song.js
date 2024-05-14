@@ -19,10 +19,9 @@ ss_el.forEach(el => {
         polygons.forEach(elem => {
             elem.querySelectorAll("animate")[0].beginElement();
         });
-        setTimeout(function() {
-            polygons.forEach(elem => {
-                elem.querySelectorAll("animate")[1].beginElement();
-            });}, 200);
+        polygons.forEach(elem => {
+            elem.querySelectorAll("animate")[1].beginElement();
+        });
             
         console.log("ss js");
     }
