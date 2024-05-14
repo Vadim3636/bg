@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    color: #fff;
+    font-family: arial;
 }
 
 body{
@@ -30,6 +32,8 @@ interface > * {
 }
 interface content{
     flex: 100;
+
+    display: flex;
 }
 interface player{
     border-top: 1px inset gray;
@@ -43,4 +47,111 @@ interface player{
 
 switch-song.prev{
     transform: rotate(180deg);
+}
+
+content nav{
+    /* flex: 20; */
+    width: 150pt;
+    min-width: 100pt;
+    /* resize: horizontal; */
+    overflow: hidden;
+
+    /* display: flex; */
+    /* align-items:start; */
+    /* flex-wrap: wrap; */
+
+    background: rgba(255, 255, 255, 0.1);
+}
+content nav h2{
+    font-size: 20pt;
+    color: #fff;
+
+    display: flex;
+    /* justify-content: center; */
+
+    padding: 10px 15px 0px 10px;
+}
+content nav h2 svg{
+    margin: 0px 10px 0px 5px;
+    height: 20pt;
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 7px;
+    stroke-linejoin: round;
+}
+content nav list{
+    width: 100%;
+    height: max-content;
+    display: inline-block;
+
+    padding-top: 20px;
+    padding-left: 5px;
+}
+content nav list element{
+    --width: 175%;
+    --left-flex: 4;
+    --right-flex: 3;
+    width: var(--width);
+    height: 40pt;
+    display: flex;
+
+    /* background: rgba(0, 0, 0, 0.3); */
+    
+    transition: .5s ease-out;
+}
+element:hover{
+    margin-left: -75%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+content nav list element info{
+    flex: var(--left-flex);
+    height: 40pt;
+    display: flex;
+
+    /* background: rgba(0, 0, 0, 0.3); */
+}
+content nav list element menu{
+    padding: 0px;
+    margin: 0px;
+
+    flex: var(--right-flex);
+
+    /* background: #000; */
+}
+content nav list element info img{
+    /* width: 40pt; */
+
+    margin: 5%;
+    margin-top: 3.5%;
+    border-radius: 5%;
+    aspect-ratio: 1 / 1;
+    height: 75%;
+
+    /* background: #00f; */
+}
+element section{
+    /* background: rgba(255, 0, 0, 0.3); */
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 10pt;
+    line-height: 10pt;
+
+    padding: 5% 0%;
+}
+element section h4{
+    font-size: 8pt;
+    padding-left: 5px;
+}
+element info section h3, element info section h4{
+    width: 100%;
+    font-family: "Prompt", sans-serif;
+    font-weight: 350;
+    /* font-style: normal; */
+}
+
+content section{
+    flex: 90;
 }
