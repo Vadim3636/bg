@@ -7,6 +7,10 @@ function randInt(min, max) {
 
 window.addEventListener("load", function() {
     setInterval(function() {
+
+        // govnocode
+        if (document.querySelector("play-pause").classList.contains("clicked")) return;
+
         while (container == undefined) {
             container = document.querySelector("background background-box");
         }
@@ -19,6 +23,7 @@ window.addEventListener("load", function() {
         particle.style.background = "rgb(" + randInt(0, 360) + ", " + randInt(0, 360) + ", " + randInt(0, 360) + ")";
         container.appendChild(particle);
         setTimeout(function() {
+
             particle.remove();
         }, animationDuration * 1000);
     }, 300);
