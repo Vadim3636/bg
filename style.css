@@ -32,7 +32,7 @@ interface content{
     flex: 100;
 }
 interface player{
-    border: 1px solid white;
+    border-top: 1px inset gray;
     display: flex;
     justify-content: center;
     align-items: center;
