@@ -1,11 +1,13 @@
-/* body {
+
+body {
     display: flex;
     align-items: center;
     min-height: 100vh;
     justify-content: center;
-} */
+    background: #333;
+}
 
-play-pause {
+switch-song {
     --button-color: white;
     --button-hovered-color: rgb(197, 197, 197);
     --button-color-border: rgb(128, 128, 128);
@@ -18,7 +20,7 @@ play-pause {
     transition: .3s;
 }
 
-play-pause svg {
+switch-song svg {
     display: block;
     height: 50%;
     width: 50%;
@@ -34,22 +36,22 @@ play-pause svg {
 }
 
 
-play-pause{
+switch-song{
     height: 25pt;
     width: 25pt;
-    border: 4px inset var(--button-color-border);
+    /* border: 4px inset var(--button-color-border); */
     border-radius: 50%;
     padding: 7px;
 
     overflow: hidden;
 }
-play-pause:hover{
+switch-song:hover{
     /* transform: rotate(180deg); */
-    border: 4px inset var(--button-color);
+    /* border: 4px inset var(--button-color); */
 
     /* transform: rotate(15deg); */
 }
-play-pause:hover > svg{
+switch-song:hover > svg{
     /* transform: scale(2); */
     fill: var(--button-hovered-color);
     stroke: var(--button-hovered-color);

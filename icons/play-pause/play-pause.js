@@ -1,21 +1,31 @@
-const el = document.querySelector('play-pause');
+let pp_el = document.querySelector('play-pause');
 
-el.addEventListener('click', () => {
+pp_el.addEventListener('click', () => {
   
-const rightAnimations = el.querySelectorAll('.right animate'),
-leftAnimations = el.querySelectorAll('.left animate'),
-className = 'clicked';
+  const polygons = pp_el.querySelectorAll("polygon"),
+  className = 'clicked';
   
-  el.classList.toggle(className);
-  
-  if (el.classList.contains(className)) {
-    rightAnimations[1].beginElement();
-    leftAnimations[1].beginElement();
-  } else {
-    rightAnimations[0].beginElement();
-    leftAnimations[0].beginElement();
+  pp_el.classList.toggle(className);
+
+  if (pp_el == undefined) {
+    setTimeout(function() {
+      pp_el.click()
+    }, 50);
+    return;
   }
+  
+  if (pp_el.classList.contains(className)) {
+    polygons.forEach(elem => {
+      elem.querySelectorAll("animate")[1].beginElement();
+    });
+  } else {
+    polygons.forEach(elem => {
+      elem.querySelectorAll("animate")[0].beginElement();
+    });
+  }
+  
+  console.log("pp js");
   
 })
 
-window.addEventListener("load", function() { setTimeout(function() { el.click(); }, 50); });
+window.addEventListener("load", function() { setTimeout(function() { pp_el.click(); }, 50); });
