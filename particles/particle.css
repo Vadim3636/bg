@@ -6,11 +6,11 @@ background{
     top: -10vh;
     width: 120vw;
     height: 120vh;
-    background: #000;
+    /* background: #000; */
     /* background-image: url(гусь.jpg); */
     background: transparent;
 
-    filter: blur(50px)/* brightness(30%) */;
+    filter: blur(50px) /* brightness(30%) */;
     z-index: -1;
 }
 
